@@ -1,0 +1,573 @@
+/* =========================================
+   EVENTIFY CASE STUDY
+   ========================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    color: #222222;
+    line-height: 1.6;
+}
+
+/* =========================================
+   NAVBAR
+   ========================================= */
+
+.eventify-header {
+    width: 100%;
+    background-color: #ffffff;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    border-bottom: 1px solid #eeeeee;
+}
+
+.eventify-nav {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px 40px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* LOGO */
+
+.eventify-logo {
+    text-decoration: none;
+    font-size: 28px;
+    font-weight: 700;
+    color: #7c3aed;
+}
+
+.eventify-logo span {
+    color: #ff7a3d;
+}
+
+/* NAV LINKS */
+
+.eventify-links {
+    display: flex;
+    align-items: center;
+    gap: 35px;
+}
+
+.eventify-links a {
+    text-decoration: none;
+    color: #222222;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.eventify-links a:hover {
+    color: #7c3aed;
+}
+
+/* =========================================
+   MAIN
+   ========================================= */
+
+.eventify-main {
+    width: 100%;
+}
+
+/* =========================================
+   HERO
+   ========================================= */
+
+.eventify-hero {
+    min-height: 600px;
+    padding: 100px 40px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: linear-gradient(
+        135deg,
+        #f5f0ff 0%,
+        #ffffff 60%,
+        #fff3ed 100%
+    );
+}
+
+.eventify-hero-content {
+    width: 100%;
+    max-width: 1100px;
+    text-align: center;
+}
+
+.eventify-hero h1 {
+    font-size: 64px;
+    line-height: 1.1;
+    margin-bottom: 25px;
+    color: #7c3aed;
+}
+
+.eventify-hero h1 span {
+    color: #ff7a3d;
+}
+
+.eventify-hero p {
+    max-width: 700px;
+    margin: 0 auto 35px;
+    font-size: 18px;
+    color: #555555;
+}
+
+/* =========================================
+   GENERAL SECTIONS
+   ========================================= */
+
+.eventify-section {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 100px 40px;
+}
+
+.eventify-section h2 {
+    font-size: 40px;
+    color: #7c3aed;
+    margin-bottom: 20px;
+}
+
+.eventify-section h3 {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.eventify-section p {
+    max-width: 800px;
+    font-size: 16px;
+    color: #555555;
+    margin-bottom: 20px;
+}
+
+/* =========================================
+   INTRO / OVERVIEW
+   ========================================= */
+
+.eventify-overview {
+    background-color: #ffffff;
+}
+
+.eventify-overview-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+}
+
+.eventify-overview-text {
+    padding-right: 20px;
+}
+
+/* =========================================
+   PROJECT INFO
+   ========================================= */
+
+.eventify-info {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    margin-top: 40px;
+}
+
+.eventify-info-card {
+    padding: 30px;
+    border-radius: 18px;
+    background-color: #f7f5ff;
+    border: 1px solid #eee8ff;
+}
+
+.eventify-info-card h3 {
+    color: #7c3aed;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.eventify-info-card p {
+    margin-bottom: 0;
+    font-size: 14px;
+}
+
+/* =========================================
+   PROBLEM
+   ========================================= */
+
+.eventify-problem {
+    background-color: #fafafa;
+}
+
+.eventify-problem-content {
+    max-width: 850px;
+}
+
+/* =========================================
+   GOALS
+   ========================================= */
+
+.eventify-goals {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+    margin-top: 40px;
+}
+
+.eventify-goal {
+    padding: 30px;
+    border-radius: 18px;
+    background-color: #ffffff;
+    border: 1px solid #eeeeee;
+    transition: 0.3s;
+}
+
+.eventify-goal:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(124, 58, 237, 0.08);
+}
+
+.eventify-goal h3 {
+    color: #7c3aed;
+}
+
+/* =========================================
+   USER PERSONA
+   ========================================= */
+
+.eventify-persona {
+    display: grid;
+    grid-template-columns: 280px 1fr;
+    gap: 50px;
+    align-items: center;
+}
+
+.eventify-persona-image {
+    width: 280px;
+    height: 280px;
+    border-radius: 50%;
+    background-color: #f0eaff;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: #7c3aed;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.eventify-persona-info h3 {
+    color: #7c3aed;
+}
+
+/* =========================================
+   USER FLOW
+   ========================================= */
+
+.eventify-flow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 40px;
+}
+
+.eventify-flow-step {
+    padding: 18px 25px;
+    background-color: #7c3aed;
+    color: #ffffff;
+    border-radius: 12px;
+    font-size: 14px;
+    text-align: center;
+}
+
+.eventify-flow-arrow {
+    font-size: 22px;
+    color: #ff7a3d;
+}
+
+/* =========================================
+   DESIGN / COLORS
+   ========================================= */
+
+.eventify-colors {
+    display: flex;
+    gap: 25px;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+.eventify-color {
+    width: 150px;
+    height: 150px;
+    border-radius: 20px;
+    display: flex;
+    align-items: flex-end;
+    padding: 15px;
+    color: #ffffff;
+    font-weight: 600;
+}
+
+.eventify-purple {
+    background-color: #7c3aed;
+}
+
+.eventify-pink {
+    background-color: #ec4899;
+}
+
+.eventify-orange {
+    background-color: #ff7a3d;
+}
+
+.eventify-dark {
+    background-color: #222222;
+}
+
+/* =========================================
+   TYPOGRAPHY
+   ========================================= */
+
+.eventify-typography {
+    margin-top: 40px;
+}
+
+.eventify-typography h1 {
+    font-size: 60px;
+    color: #7c3aed;
+    margin-bottom: 10px;
+}
+
+.eventify-typography h2 {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.eventify-typography p {
+    font-size: 18px;
+}
+
+/* =========================================
+   SCREENS / MOCKUPS
+   ========================================= */
+
+.eventify-screens {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.eventify-screen {
+    background-color: #f7f5ff;
+    border-radius: 20px;
+    padding: 20px;
+    min-height: 400px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: #7c3aed;
+    text-align: center;
+}
+
+/* If actual images are used */
+
+.eventify-screen img {
+    width: 100%;
+    max-width: 350px;
+    height: auto;
+    display: block;
+    border-radius: 15px;
+}
+
+/* =========================================
+   RESULTS
+   ========================================= */
+
+.eventify-results {
+    background-color: #f7f5ff;
+}
+
+.eventify-results-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    margin-top: 40px;
+}
+
+.eventify-result-card {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 18px;
+}
+
+.eventify-result-card h3 {
+    color: #7c3aed;
+}
+
+/* =========================================
+   CONCLUSION
+   ========================================= */
+
+.eventify-conclusion {
+    text-align: center;
+}
+
+.eventify-conclusion p {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* =========================================
+   FOOTER
+   ========================================= */
+
+.eventify-footer {
+    background-color: #222222;
+    color: #ffffff;
+    text-align: center;
+    padding: 50px 30px;
+}
+
+.eventify-footer h2 {
+    color: #ffffff;
+    margin-bottom: 15px;
+}
+
+.eventify-footer p {
+    color: #cccccc;
+    margin-bottom: 10px;
+}
+
+.eventify-footer a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.eventify-footer a:hover {
+    color: #7c3aed;
+}
+
+/* =========================================
+   BUTTON
+   ========================================= */
+
+.eventify-button {
+    display: inline-block;
+    padding: 14px 28px;
+    background-color: #7c3aed;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 10px;
+    font-size: 14px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.eventify-button:hover {
+    background-color: #6d28d9;
+    transform: translateY(-2px);
+}
+
+/* =========================================
+   RESPONSIVE
+   ========================================= */
+
+@media (max-width: 768px) {
+
+    .eventify-nav {
+        padding: 15px 20px;
+    }
+
+    .eventify-links {
+        gap: 15px;
+    }
+
+    .eventify-links a {
+        font-size: 12px;
+    }
+
+    .eventify-logo {
+        font-size: 22px;
+    }
+
+    .eventify-hero {
+        padding: 70px 20px;
+        min-height: 500px;
+    }
+
+    .eventify-hero h1 {
+        font-size: 42px;
+    }
+
+    .eventify-hero p {
+        font-size: 16px;
+    }
+
+    .eventify-section {
+        padding: 70px 20px;
+    }
+
+    .eventify-section h2 {
+        font-size: 32px;
+    }
+
+    .eventify-overview-content {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .eventify-info {
+        grid-template-columns: 1fr;
+    }
+
+    .eventify-goals {
+        grid-template-columns: 1fr;
+    }
+
+    .eventify-persona {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .eventify-persona-image {
+        margin: 0 auto;
+    }
+
+    .eventify-screens {
+        grid-template-columns: 1fr;
+    }
+
+    .eventify-results-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .eventify-colors {
+        justify-content: center;
+    }
+
+    .eventify-flow {
+        flex-direction: column;
+    }
+
+    .eventify-flow-arrow {
+        transform: rotate(90deg);
+    }
+}
